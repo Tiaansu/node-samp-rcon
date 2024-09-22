@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Node RCON</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"
+            integrity="sha512-p7Ey2nBhKYEi9yh0iDs+GMA0ttebOqVl3OO2oWRzRxtDoN/RedyYcHFUJZhMVi8NKRdEA7n+9NTNQX/kFIZgNw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <div class="rcon-console">
+            <div class="output">
+                <div class="pad"></div>
+                <pre><span>Host: </span></pre>
+            </div>
+            <div class="prompt-wrap">
+                <input
+                    type="text"
+                    class="prompt"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    disabled="disabled"
+                />
+            </div>
+        </div>
+        <script src="/script/app.js"></script>
+    </body>
+</html>
